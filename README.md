@@ -168,6 +168,6 @@ What is the difference between @Component and @ComponentScan?
 
 **@Component** and **@ComponentScan** are for different purposes. 
 
-* @Component indicates that a class might be a candidate for creating a bean. 
+* **@Component** indicates that a class might be a candidate for creating a bean. 
 
-* @ComponentScan is searching packages for Components.  
+* **@ComponentScan** will searching packages for Components.  
