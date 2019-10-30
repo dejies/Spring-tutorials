@@ -25,7 +25,7 @@ Provide production-ready features such as metrics, health checks and externalize
 
 Absolutely no code generation and no requirement for XML configuration 
 
-Spring Initializr 
+##Spring Initializr 
 
 Spring Initializr provides an extensible API to generate JVM-based projects with implementations for several common concepts: 
 
@@ -41,10 +41,9 @@ The various options for the projects are expressed in a metadata model that allo
 
 Spring Initializr also exposes web endpoints to generate an actual project and also serve its metadata in a well-known format to allow third-party clients to provide the necessary assistance. 
 
-Page Break
- 
 
-Modules 
+
+##Modules 
 
 Spring Initializr has the following modules: 
 
@@ -70,7 +69,7 @@ initializr-web: web endpoints for third party clients.
 
  
 
-How Spring Boot work? 
+##How Spring Boot work? 
 
 Spring Boot automatically configures your application based on the dependencies you have added to the project by using @EnableAutoConfiguration annotation. For example, if MySQL database is on your classpath, but you have not configured any database connection, then Spring Boot auto-configures an in-memory database. 
 
@@ -80,7 +79,7 @@ Spring Boot automatically scans all the components included in the project by us
 
  
 
-Spring Boot Starters 
+##Spring Boot Starters 
 
 Handling dependency management is a difficult task for big projects. Spring Boot resolves this problem by providing a set of dependencies for developer's convenience. 
 
@@ -94,7 +93,7 @@ Note that all Spring Boot starters follow the same naming pattern spring-boot-st
 
  
 
-Auto Configuration 
+##Auto Configuration 
 
 Spring Boot Auto Configuration automatically configures your Spring application based on the JAR dependencies you added in the project. 
 
@@ -122,7 +121,7 @@ public class HelloWorldApplication {
 
  
 
-Component Scan 
+##Component Scan 
 
 The first step of defining Spring Beans is by adding the right annotation - @Component or @Service or @Repository. 
 
@@ -143,7 +142,7 @@ If there are beans/components in other packages which are not sub packages of th
 
  
 
-Case 1 
+###Case 1 
 
 @SpringBootApplication defines an automatic component scan on package  
 
@@ -155,7 +154,7 @@ public class SpringBootSampleApplication {}
 
 In this case it will scan for all components under com.dejies.springboot.sample and its sub-packages. 
 
-Case 2 
+###Case 2 
 
 package com.dejies.springboot.sample; 
 
