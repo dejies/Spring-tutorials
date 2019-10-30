@@ -11,7 +11,7 @@ Most Spring Boot applications need very little Spring configuration.
 
  
 
-**Features of Spring Boot **
+**Features of Spring Boot**
 
 Create stand-alone Spring applications 
 
@@ -25,7 +25,7 @@ Provide production-ready features such as metrics, health checks and externalize
 
 Absolutely no code generation and no requirement for XML configuration 
 
-**Spring Initializr **
+**Spring Initializr**
 
 Spring Initializr provides an extensible API to generate JVM-based projects with implementations for several common concepts: 
 
@@ -43,7 +43,7 @@ Spring Initializr also exposes web endpoints to generate an actual project and a
 
 
 
-**Modules **
+**Modules**
 
 Spring Initializr has the following modules: 
 
@@ -79,7 +79,7 @@ Spring Boot automatically scans all the components included in the project by us
 
  
 
-**Spring Boot Starters **
+**Spring Boot Starters**
 
 Handling dependency management is a difficult task for big projects. Spring Boot resolves this problem by providing a set of dependencies for developer's convenience. 
 
@@ -93,7 +93,7 @@ Note that all Spring Boot starters follow the same naming pattern spring-boot-st
 
  
 
-**Auto Configuration **
+**Auto Configuration**
 
 Spring Boot Auto Configuration automatically configures your Spring application based on the JAR dependencies you added in the project. 
 
@@ -131,18 +131,17 @@ However, Spring does not know about the bean unless it knows where to search for
 
 The programmer defines the packages that have to be scanned. Once you define a Component Scan for a package, Spring would search the package and all its sub packages for components/beans. 
 
-Page Break
  
 
 If your other packages hierarchies are below your main app with the **@SpringBootApplication** annotation, you’re covered by implicit components scan. 
 
-If there are beans/components in other packages which are not sub packages of the main package, you should manually add them as **@ComponentScan **
+If there are beans/components in other packages which are not sub packages of the main package, you should manually add them as **@ComponentScan**
 
  
 
  
 
-* *Case 1* *
+ *Case 1* 
 
 **@SpringBootApplication** defines an automatic component scan on package  
 
@@ -154,7 +153,7 @@ public class SpringBootSampleApplication {}
 
 In this case it will scan for all components under com.dejies.springboot.sample and its sub-packages. 
 
-* *Case 2 * *
+*Case 2*
 
 package com.dejies.springboot.sample; 
 
@@ -169,6 +168,6 @@ What is the difference between @Component and @ComponentScan?
 
 **@Component** and **@ComponentScan** are for different purposes. 
 
-*@Component indicates that a class might be a candidate for creating a bean. 
+* @Component indicates that a class might be a candidate for creating a bean. 
 
-*@ComponentScan is searching packages for Components.  
+* @ComponentScan is searching packages for Components.  
